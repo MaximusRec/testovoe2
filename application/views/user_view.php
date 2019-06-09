@@ -1,15 +1,14 @@
 <form name="input" action="/user" method="post">
-<h1>Пользователи</h1>
-<p>
+<h3>Страница пользователя:</h3>
+<p style="text-align: center;">
 <?= $data ?>
 </p>
-<p></p>
-<p>
+<p style="text-align: center;">
 		<input type="submit" name="quit" value="Выйти">
 </p>
-<p></p>
-<p></p>
-<hr><br><br><br>
+<br><hr><br><br>
+<p><a href="/user/category">Посмотреть дерево категорий</a></p>
+<br><br>
 </p>Задание № 3.</p>
 <p>3. Написать SQL-запросы для получения следующих данных:
 <ul>

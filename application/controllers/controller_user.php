@@ -24,7 +24,7 @@ class Controller_User extends Controller
 	
 		
 	function action_category()
-	{	$category = "Выводим категории продуктов.";
+	{	$category = "Выводим дерево категорий продуктов.";
 		$category = $this->model->get_category();
 		$this->view->generate('user_category.php', 'template_view.php', $category );
 	}	
@@ -44,17 +44,19 @@ class Controller_User extends Controller
 		
 	function action_c()
 	{	$data = $this->model->get_c();
-		$this->view->generate('user_c.php', 'template_view.php', $data );
+		$this->view->generate('user_a.php', 'template_view.php', $data );
 	}
+		
 		
 	function action_d()
 	{	$data = $this->model->get_d();
-		$this->view->generate('user_d.php', 'template_view.php', $data );
+		$this->view->generate('user_a.php', 'template_view.php', $data );
 	}
 		
+		
 	function action_breadcrumb()
-	{	$data = $this->model->get_breadcrumb();
-		$this->view->generate('user_breadcrumb.php', 'template_view.php', $data );
+	{	$data = $this->model->getBreadCrumb();
+		$this->view->generate('user_a.php', 'template_view.php', $data );
 	}	
 	
 	

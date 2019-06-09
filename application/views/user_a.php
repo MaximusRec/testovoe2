@@ -1,10 +1,10 @@
 <form name="input" action="/user" method="post">
 <h1>Результат запроса</h1>
-<p>
+<div style="text-align: center;" >
 <?= $data ?>
-</p>
-<hr><p></p><p></p>
-<p style="text-align: center;" >
+</div>
+<br><hr>
+<p style="text-align: center;" ><br>
 		<input type="submit" value="Вернуться">
 </p>
 	</form>
